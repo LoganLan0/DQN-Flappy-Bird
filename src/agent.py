@@ -94,7 +94,7 @@ class Agent:
                     state['step'] = 1000
         self.optimizer.step()
 
-        return loss.data[0]
+        return loss.item()
 
     def take_action(self, state):
         """Perform an action."""
